@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Brands from './components/Brands.vue';
+import DressStyle from './components/DressStyle.vue';
 import Navbar from './components/Navbar.vue';
 import ProductSection from './components/ProductSection.vue';
 import Topbar from './components/Topbar.vue';
@@ -23,6 +24,7 @@ import TopSection from './components/TopSection.vue';
     { name: 'Product C', price: '$39.99', rating: 5, image: 'https://placehold.co/290x295' },
     { name: 'Product D', price: '$49.99', rating: 5, image: 'https://placehold.co/290x295' }
   ]" />
+  <DressStyle />
 </template>
 
 <style scoped>
