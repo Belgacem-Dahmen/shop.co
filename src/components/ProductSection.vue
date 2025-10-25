@@ -30,13 +30,18 @@ defineProps<{
   display: flex;
   flex-direction: column;
   gap: 50px;
+
   align-items: center;
 }
+
 .products {
   display: flex;
-  gap: 25px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
+
 .products-section h2 {
+  margin-top: 50px;
   font-size: 48px;
   letter-spacing: -3px;
   font-weight: 900;
@@ -50,5 +55,9 @@ button {
   padding: 16px 54px;
   border-radius: 62px;
   display: flex;
+  min-width: 218px;
+  align-items: center;
+  justify-content: center;
+  border: none;
 }
 </style>

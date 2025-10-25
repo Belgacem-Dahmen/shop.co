@@ -1,5 +1,7 @@
 <template>
   <section class="topSection">
+    <StarSvg width="80" color="#000" top="100px" right="30px" />
+    <StarSvg width="60" color="#000" top="320px" right="600px" />
     <div class="topSection_content">
       <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
       <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and
@@ -15,8 +17,8 @@
 </template>
 
 <script setup lang="ts">
-import Stat from './stat.vue';
-
+import StarSvg from './starSvg.vue';
+import Stat from './Stat.vue';
 </script>
 
 <style scoped>
@@ -29,6 +31,7 @@ import Stat from './stat.vue';
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0 75px;
+  position: relative;
 }
 
 .topSection_content h1 {
