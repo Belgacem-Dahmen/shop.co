@@ -3,6 +3,7 @@ import Brands from './components/Brands.vue';
 import DressStyle from './components/DressStyle.vue';
 import Navbar from './components/Navbar.vue';
 import ProductSection from './components/ProductSection.vue';
+import ReviewSection from './components/ReviewSection.vue';
 import Topbar from './components/Topbar.vue';
 import TopSection from './components/TopSection.vue';
 </script>
@@ -25,6 +26,7 @@ import TopSection from './components/TopSection.vue';
     { name: 'Product D', price: '$49.99', rating: 5, image: 'https://placehold.co/290x295' }
   ]" />
   <DressStyle />
+  <ReviewSection />
 </template>
 
 <style scoped>
