@@ -33,7 +33,7 @@
 
 <style scoped>
 .dressStyleSection {
-  padding: 0px 75px;
+  padding: 75px;
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;

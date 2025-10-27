@@ -4,8 +4,10 @@
     <StarSvg width="60" color="#000" top="320px" right="600px" />
     <div class="topSection_content">
       <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
-      <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and
-        cater to your sense of style.</p>
+      <p>
+        Browse through our diverse range of meticulously crafted garments, designed to bring out
+        your individuality and cater to your sense of style.
+      </p>
       <button>Shop Now</button>
       <div class="topSection_content-stats">
         <Stat number="200" title="International Brands" />
@@ -17,8 +19,8 @@
 </template>
 
 <script setup lang="ts">
-import StarSvg from './starSvg.vue';
-import Stat from './Stat.vue';
+import StarSvg from './starSvg.vue'
+import Stat from './Stat.vue'
 </script>
 
 <style scoped>
@@ -26,7 +28,7 @@ import Stat from './Stat.vue';
   min-height: 750px;
   display: flex;
   align-items: center;
-  background-image: url('../../public/image.png');
+  background-image: url('/image.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,7 +43,6 @@ import Stat from './Stat.vue';
   letter-spacing: -4px;
   padding-right: 20px;
   line-height: 64px;
-
 }
 
 .topSection_content {
@@ -51,11 +52,10 @@ import Stat from './Stat.vue';
   height: 100%;
   max-width: 600px;
   color: rgb(18, 17, 17);
-
 }
 
 .topSection_content p {
-  color: rgb(18, 17, 17, 0.60);
+  color: rgb(18, 17, 17, 0.6);
   font-size: 16px;
 }
 
@@ -74,5 +74,27 @@ button {
 .topSection_content-stats {
   display: flex;
   gap: 30px;
+}
+
+@media screen and (max-width: 675px) {
+  .topSection {
+    padding: 0 20px;
+    /* max-width: 375px; */
+  }
+  .topSection h1 {
+    font-size: 48px;
+    max-width: 375px;
+  }
+  .topSection_content {
+    background-image: url('/image.png');
+    max-width: 375px;
+    object-fit: cover;
+  }
+  .topSection_content-stats{
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  
 }
 </style>
