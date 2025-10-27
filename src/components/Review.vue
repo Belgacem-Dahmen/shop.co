@@ -43,6 +43,8 @@ svg {
   flex-direction: column;
   gap: 15px;
   min-width: 400px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, .06);
+
 }
 
 .reviewer-infos {
