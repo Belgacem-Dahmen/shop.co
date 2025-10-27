@@ -4,17 +4,17 @@
     <div class="products">
       <Product v-for="(product, index) in products" :key="index" :product="product" />
     </div>
-    <button> View All</button>
+    <button>View All</button>
   </div>
 </template>
 
 <script setup lang="ts">
-import Product from './Product.vue';
-
+import Product from './Product.vue'
 
 defineProps<{
   title: string
   products: Array<{
+    id: number
     name: string
     price: string
     image: string
@@ -30,7 +30,6 @@ defineProps<{
   display: flex;
   flex-direction: column;
   gap: 50px;
-
   align-items: center;
 }
 
@@ -48,8 +47,6 @@ defineProps<{
   color: rgb(18, 18, 18);
   text-transform: uppercase;
 }
-
-
 
 button {
   padding: 16px 54px;
