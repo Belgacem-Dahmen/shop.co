@@ -3,16 +3,15 @@
     <Topbar />
     <Navbar />
     <router-view></router-view>
+    <Footer />
   </div>
 </template>
 
 <script setup lang="ts">
-import Navbar from './components/Navbar.vue';
-import Topbar from './components/Topbar.vue';
-
+import Footer from './components/Footer.vue'
+import Navbar from './components/Navbar.vue'
+import Topbar from './components/Topbar.vue'
 </script>
-
-
 
 <style scoped>
 .main {
